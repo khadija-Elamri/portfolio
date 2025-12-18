@@ -1,0 +1,186 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables for Theme Customization */
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #6366f1;
+  --accent-color: #10b981;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --border-color: #e5e7eb;
+}
+
+.dark {
+  --primary-color: #60a5fa;
+  --secondary-color: #818cf8;
+  --accent-color: #34d399;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --border-color: #374151;
+}
+
+/* Global Base Styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+  }
+
+  /* Focus Styles for Accessibility */
+  *:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+  }
+}
+
+/* Component Styles */
+@layer components {
+  /* Project Card Hover Effects */
+  .project-card {
+    @apply transition-all duration-300 ease-in-out;
+    @apply bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6;
+    @apply hover:shadow-lg hover:-translate-y-1;
+  }
+
+  /* Technology Badge Styles */
+  .tech-badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+    @apply bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200;
+    @apply transition-colors duration-200 hover:opacity-80;
+  }
+
+  /* Status Indicator */
+  .status-indicator {
+    @apply inline-block w-3 h-3 rounded-full mr-2;
+  }
+
+  .status-active { @apply bg-green-500; }
+  .status-development { @apply bg-yellow-500; }
+  .status-maintenance { @apply bg-blue-500; }
+
+  /* Project Grid with Responsive Design */
+  .project-grid {
+    @apply grid gap-6;
+    @apply grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
+  }
+
+  /* Gradient Backgrounds for Project Categories */
+  .bg-gradient-frontend {
+    @apply bg-gradient-to-br from-purple-500 to-pink-500;
+  }
+
+  .bg-gradient-backend {
+    @apply bg-gradient-to-br from-blue-500 to-cyan-500;
+  }
+
+  .bg-gradient-fullstack {
+    @apply bg-gradient-to-br from-green-500 to-teal-500;
+  }
+
+  /* Custom Scrollbar for Project Details */
+  .project-details-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) transparent;
+  }
+
+  .project-details-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .project-details-scrollbar::-webkit-scrollbar-track {
+    @apply bg-gray-100 dark:bg-gray-800;
+  }
+
+  .project-details-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-blue-500 rounded-full;
+  }
+
+  /* Loading Skeleton for Project Cards */
+  .project-skeleton {
+    @apply animate-pulse bg-gray-200 dark:bg-gray-700 rounded-xl;
+  }
+
+  /* Tech Stack Animation */
+  .tech-stack-container {
+    @apply flex flex-wrap gap-2;
+  }
+
+  .tech-stack-item {
+    @apply transition-transform duration-200 hover:scale-105;
+  }
+
+  /* Button Styles */
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg;
+    @apply transition-colors duration-200 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600;
+    @apply text-gray-900 dark:text-gray-100 font-medium py-2 px-4 rounded-lg;
+    @apply transition-colors duration-200 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2;
+  }
+}
+
+/* Utility Classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Deployment Badge */
+.deployment-badge {
+  @apply inline-flex items-center gap-1 px-2 py-1 rounded-md text-xs font-medium;
+}
+
+.deployment-vercel {
+  @apply bg-black text-white;
+}
+
+.deployment-netlify {
+  @apply bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200;
+}
+
+.deployment-render {
+  @apply bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200;
+}
+
+.deployment-railway {
+  @apply bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200;
+}

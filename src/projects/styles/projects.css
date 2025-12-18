@@ -1,0 +1,15 @@
+/* src/projects/styles/projects.css */
+
+/* Project-specific styles */
+.projects-grid {
+  /* Add any custom styles for projects grid */
+}
+
+.project-card {
+  /* Add any custom styles for project cards */
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  transition: transform 0.3s ease;
+}

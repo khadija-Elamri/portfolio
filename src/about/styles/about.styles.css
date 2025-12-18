@@ -1,0 +1,19 @@
+/* src/about/styles/about.styles.css */
+
+/* Custom styles for the About section */
+.about-section {
+  /* Add any custom styles here */
+}
+
+.about-text {
+  /* Custom text styling if needed */
+}
+
+.about-stats {
+  /* Custom stats styling if needed */
+}
+
+.about-stats:hover {
+  transform: translateY(-2px);
+  transition: transform 0.3s ease;
+}
