@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaGest Pro | Projet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-emerald-50">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+           <div class="flex justify-between h-20 items-center">
+               <a href="projects.html" class="text-lg font-bold text-gray-800 hover:text-emerald-600 transition">
+                   <i class="fas fa-arrow-left mr-2"></i> Retour aux projets
+               </a>
+           </div>
+        </div>
+    </nav>
+
+    <!-- PROJECT HEADER -->
+    <header class="pt-32 pb-16 bg-emerald-900 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-start gap-12">
+                
+                <!-- Description -->
+                <div class="md:w-2/3">
+                    <span class="inline-block px-3 py-1 bg-emerald-500 rounded-full text-xs font-bold tracking-wide mb-4">MÉDICAL / GESTION</span>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">PharmaGest Pro</h1>
+                    <p class="text-emerald-100 text-lg leading-relaxed mb-8">
+                        Un système d'information complet pour la gestion moderne des pharmacies. 
+                        Cette application SPA (Single Page Application) assure une fluidité totale dans la gestion des stocks, des ventes et le suivi des ordonnances.
+                    </p>
+                    
+                    <!-- Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="px-8 py-3 bg-emerald-500 hover:bg-emerald-400 text-white rounded-lg font-bold transition shadow-lg text-center">
+                            <i class="fas fa-desktop mr-2"></i> Voir la Démo
+                        </a>
+                        <a href="https://github.com/khadija-Elamri" target="_blank" class="px-8 py-3 bg-emerald-800 hover:bg-emerald-700 text-white border border-emerald-700 rounded-lg font-bold transition text-center">
+                            <i class="fab fa-github mr-2"></i> Code Source
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tech Stack Side -->
+                <div class="md:w-1/3 w-full">
+                    <div class="p-6 bg-emerald-800 rounded-lg border border-emerald-700 shadow-xl">
+                        <h3 class="font-bold text-emerald-300 mb-4 uppercase tracking-wider text-sm">Technologies</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-white text-emerald-800 rounded text-sm font-bold">React JS</span>
+                            <span class="px-3 py-1 bg-emerald-700 text-emerald-100 rounded text-sm">Laravel API</span>
+                            <span class="px-3 py-1 bg-emerald-700 text-emerald-100 rounded text-sm">MySQL</span>
+                            <span class="px-3 py-1 bg-emerald-700 text-emerald-100 rounded text-sm">Axios</span>
+                            <span class="px-3 py-1 bg-emerald-700 text-emerald-100 rounded text-sm">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <section class="py-20 px-4">
+        <div class="max-w-5xl mx-auto space-y-20">
+            <!-- Screenshot -->
+            <div class="rounded-xl overflow-hidden shadow-2xl border border-gray-200 group">
+                <div class="bg-gray-200 h-96 flex items-center justify-center text-gray-400 relative">
+                    <i class="fas fa-file-medical-alt text-4xl mb-2"></i>
+                    <span class="absolute bottom-4 font-mono text-sm">Interface PharmaGest</span>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-10 border-l-4 border-emerald-600 pl-4">Fonctionnalités Clés</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center text-xl"><i class="fas fa-boxes"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">Gestion de Stock</h4>
+                            <p class="text-gray-600 text-sm">Suivi en temps réel des médicaments, alertes de péremption et réapprovisionnement automatique.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center text-xl"><i class="fas fa-cash-register"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">Point de Vente (POS)</h4>
+                            <p class="text-gray-600 text-sm">Interface de caisse rapide développée en React pour traiter les ventes et imprimer les tickets.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center text-xl"><i class="fas fa-file-prescription"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">Traçabilité</h4>
+                            <p class="text-gray-600 text-sm">Historique complet des ordonnances et gestion des dossiers patients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0"><span class="font-bold text-white text-lg">Khadija El Amri</span></div>
+            <div class="flex space-x-6 text-2xl">
+                <a href="https://github.com/khadija-Elamri" target="_blank" class="hover:text-white transition transform hover:scale-110"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/khadija-el-amri-6237b834b" target="_blank" class="hover:text-blue-400 transition transform hover:scale-110"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:khadijaelamri397@gmail.com" class="hover:text-red-400 transition transform hover:scale-110"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="mt-4 md:mt-0 text-sm opacity-70">&copy; 2024 Tous droits réservés.</div>
+        </div>
+    </footer>
+
+</body>
+</html>

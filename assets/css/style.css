@@ -1,0 +1,40 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Base Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    @apply text-gray-700 bg-gray-50;
+}
+
+h1, h2, h3, h4, h5, h6, .nav-link, .btn {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Active State */
+.nav-link.active {
+    @apply text-blue-600 font-semibold;
+}
+
+/* Animations simples */
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Design System - Project Specifics */
+.theme-dashboard .accent-bg { @apply bg-blue-600; }
+.theme-dashboard .accent-text { @apply text-blue-600; }
+
+.theme-ecommerce .accent-bg { @apply bg-amber-700; }
+.theme-ecommerce .accent-text { @apply text-amber-700; }

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="flex flex-col min-h-screen bg-gray-50">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="text-2xl font-bold text-gray-800">Khadija<span class="text-blue-600">Dev</span></a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link hover:text-blue-600 transition">Home</a>
+                    <a href="about.html" class="nav-link active text-blue-600 font-semibold transition">About</a>
+                    <a href="projects.html" class="nav-link hover:text-blue-600 transition">Projets</a>
+                    <a href="skills.html" class="nav-link hover:text-blue-600 transition">Skills</a>
+                    <a href="contact.html" class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER (MODIFIÉ) -->
+    <header class="pt-32 pb-10 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <!-- Image Area -->
+            <div class="md:w-1/3 flex justify-center">
+                <div class="w-64 h-64 bg-gray-200 rounded-full border-4 border-white shadow-xl flex items-center justify-center overflow-hidden">
+                    <i class="fas fa-user text-6xl text-gray-400"></i>
+                </div>
+            </div>
+            <!-- Text Area -->
+            <div class="md:w-2/3 text-center md:text-left">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Bonjour, je suis <span class="text-blue-600">Développeuse Full Stack</span></h1>
+                <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                    Passionnée par le code et la résolution de problèmes, je crée des applications web modernes, rapides et évolutives. Mon objectif est de transformer des idées complexes en expériences utilisateurs fluides.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <!-- CHANGEMENT ICI : Casablanca, Maroc -->
+                    <div class="flex items-center text-gray-700">
+                        <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i> Casablanca, Maroc
+                    </div>
+                    <div class="flex items-center text-gray-700">
+                        <i class="fas fa-envelope text-blue-500 mr-2"></i> khadijaelamri397@gmail.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TIMELINE (Experience) -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Mon Parcours</h2>
+            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+                
+                <!-- Item 1 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-blue-500 text-slate-500 group-[.is-active]:text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <i class="fas fa-briefcase text-sm"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-bold text-slate-900">Développeuse Freelance</div>
+                            <time class="font-caveat font-medium text-blue-500">2023 - Présent</time>
+                        </div>
+                        <div class="text-slate-500">Développement de sites web sur mesure pour des clients locaux et e-commerçants.</div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-blue-500 text-slate-500 group-[.is-active]:text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <i class="fas fa-graduation-cap text-sm"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-bold text-slate-900">Formation Développement Web</div>
+                            <time class="font-caveat font-medium text-blue-500">2021 - 2023</time>
+                        </div>
+                        <div class="text-slate-500">Spécialisation en Full Stack (PHP/Laravel/JS). Obtention du diplôme avec mention.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER UPDATED -->
+<footer class="bg-gray-900 text-gray-300 py-10 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+            <span class="font-bold text-white text-lg">Khadija El Amri</span>
+        </div>
+        
+        <!-- Social Icons Updated -->
+        <div class="flex space-x-6 text-2xl">
+            <!-- GitHub -->
+            <a href="https://github.com/khadija-Elamri" target="_blank" class="hover:text-white transition transform hover:scale-110">
+                <i class="fab fa-github"></i>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/khadija-el-amri-6237b834b" target="_blank" class="hover:text-blue-400 transition transform hover:scale-110">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <!-- Email -->
+            <a href="mailto:khadijaelamri397@gmail.com" class="hover:text-red-400 transition transform hover:scale-110">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        
+        <div class="mt-4 md:mt-0 text-sm opacity-70">
+            &copy; 2024 Tous droits réservés.
+        </div>
+    </div>
+</footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
